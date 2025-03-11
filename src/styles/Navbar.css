@@ -1,0 +1,21 @@
+.navbar {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
