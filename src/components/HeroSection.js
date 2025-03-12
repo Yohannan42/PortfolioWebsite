@@ -18,13 +18,13 @@ const HeroSection = () => {
         </a>
 
         <a
-          href="https://github.com/yourusername/portfolio"
+          href="https://github.com/Yohannan42/PortfolioWebsite.git"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 px-4 py-2 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
         >
           <FaGithub className="text-white text-lg" />
-          <span className="text-white font-medium">GitHub</span>
+          <span className="text-white font-medium">Portfolio Website</span>
         </a>
       </div>
 
