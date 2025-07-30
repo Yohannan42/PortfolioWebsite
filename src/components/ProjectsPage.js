@@ -87,15 +87,6 @@ const ProjectsPage = () => {
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Explore my latest projects showcasing various technologies and solutions
           </p>
-          <button 
-            onClick={() => {
-              console.log('Test button clicked');
-              alert('Test button works!');
-            }}
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-          >
-            Test Button
-          </button>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
