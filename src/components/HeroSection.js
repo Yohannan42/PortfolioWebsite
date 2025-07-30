@@ -1,111 +1,112 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { FaGithub, FaFileAlt } from "react-icons/fa";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
-    <section className="relative flex flex-col items-center justify-center h-screen text-center text-white overflow-hidden">
-      {/* Resume & GitHub Links */}
-      <div className="absolute top-6 right-8 flex space-x-6 z-20">
-        <a
-          href="https://docs.google.com/document/d/1vWgN7sjOA9Qwwstz4IgcVyJIWURGx4BcZOgLt8f7uJs/edit?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-2 px-4 py-2 bg-blue-600 rounded-lg shadow-lg hover:bg-blue-500 transition duration-300"
-        >
-          <FaFileAlt className="text-white text-lg" />
-          <span className="text-white font-medium">Resume</span>
-        </a>
-
-        <a
-          href="https://github.com/Yohannan42/PortfolioWebsite.git"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center space-x-2 px-4 py-2 bg-gray-800 rounded-lg shadow-lg hover:bg-gray-700 transition duration-300"
-        >
-          <FaGithub className="text-white text-lg" />
-          <span className="text-white font-medium">Portfolio Website</span>
-        </a>
-      </div>
-
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black via-gray-900 to-black">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(59,130,246,0.2),_rgba(0,0,0,1))]"></div>
-      </div>
-
-      {/* Floating Neon Circles */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(5)].map((_, i) => (
-          <motion.div
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Animated background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 animate-gradient"></div>
+      
+      {/* Floating particles effect */}
+      <div className="absolute inset-0">
+        {[...Array(20)].map((_, i) => (
+          <div
             key={i}
-            className="absolute bg-blue-500 opacity-30 blur-3xl rounded-full"
+            className="absolute rounded-full bg-white/10"
             style={{
-              width: `${30 + i * 20}px`,
-              height: `${30 + i * 20}px`,
-              top: `${10 + i * 15}%`,
-              left: `${10 + i * 15}%`,
-            }}
-            animate={{
-              scale: [1, 1.2, 1],
-              opacity: [0.2, 0.5, 0.2],
-            }}
-            transition={{
-              duration: 6,
-              repeat: Infinity,
-              repeatType: "reverse",
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              width: `${Math.random() * 6 + 2}px`,
+              height: `${Math.random() * 6 + 2}px`,
+              animation: `float ${Math.random() * 10 + 5}s linear infinite`,
             }}
           />
         ))}
       </div>
 
-      {/* Profile Image */}
-      <motion.img
-        src="/models/BudgetAllocation/Yoo.png"
-        alt="Profile"
-        className="relative z-10 w-60 h-80 object-cover rounded-lg shadow-lg border-4 border-blue-500"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
-      />
+      <div className="container mx-auto px-4 z-10">
+        <div className="text-center">
+          {/* Profile Image - Always Visible */}
+          <div className="relative mx-auto w-48 h-48 mb-8">
+            <img
+              src="/models/BudgetAllocation/Yoo.png"
+              alt="Yohannan Woldesemayat"
+              className="w-full h-full object-cover rounded-full border-4 border-blue-500 shadow-2xl"
+            />
+            {/* Subtle border glow */}
+            <div className="absolute inset-0 rounded-full border-2 border-blue-400/50 blur-sm"></div>
+          </div>
 
-      {/* Hero Content */}
-      <motion.div
-        className="relative z-10 p-10 bg-opacity-30 backdrop-blur-lg rounded-xl shadow-lg border border-gray-800 mt-8"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <motion.h1
-          className="text-6xl font-extrabold text-blue-400 glow-text mt-8"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.3 }}
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-slideDown">
+            Yohannan Woldesemayat
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-blue-300 mb-8 animate-slideUp">
+            Full Stack Developer & Cloud Engineer
+          </p>
+          
+          <p className="text-gray-300 max-w-2xl mx-auto mb-12 animate-fadeIn">
+            Building scalable applications and solving complex problems with modern technologies.
+            Passionate about creating efficient, user-friendly solutions that make a difference.
+          </p>
+
+          <div className="flex justify-center gap-6 mb-12 animate-fadeIn">
+            <a
+              href="https://github.com/Yohannan42"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400 transition-colors transform hover:scale-110"
+            >
+              <FaGithub size={24} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/yohannan-woldesemayat/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-blue-400 transition-colors transform hover:scale-110"
+            >
+              <FaLinkedin size={24} />
+            </a>
+            <a
+              href="mailto:yohannanwol@gmail.com"
+              className="text-white hover:text-blue-400 transition-colors transform hover:scale-110"
+            >
+              <FaEnvelope size={24} />
+            </a>
+          </div>
+
+          <div className="flex justify-center gap-4 animate-slideUp">
+            <Link
+              to="/projects"
+              className="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 hover:shadow-lg"
+            >
+              View Projects
+            </Link>
+            <Link
+              to="/about"
+              className="px-8 py-3 bg-transparent border-2 border-blue-600 text-white rounded-full hover:bg-blue-600/20 transition-all transform hover:scale-105 hover:shadow-lg"
+            >
+              About Me
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          Hi, I'm <span className="text-blue-500">Yohannan Woldesemayat</span> 👋
-        </motion.h1>
-
-        <motion.p
-          className="mt-6 text-xl text-gray-300 tracking-wide"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          Backend Engineer | Full-Stack Developer
-        </motion.p>
-
-        <div className="mt-6 w-1/2 h-1 rounded-full bg-blue-500 opacity-50 animate-pulse"></div>
-      </motion.div>
-
-      {/* Scroll Down Indicator */}
-      <motion.div
-        className="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-gray-400 text-lg font-medium flex flex-col items-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-      >
-        <span className="animate-bounce">↓ Scroll Down ↓</span>
-        <div className="w-24 h-1 bg-blue-500 opacity-70 mt-2"></div>
-      </motion.div>
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
     </section>
   );
 };
