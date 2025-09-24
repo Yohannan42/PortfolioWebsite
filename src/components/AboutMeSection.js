@@ -10,13 +10,13 @@ const AboutMeSection = () => {
   const highlights = [
     {
       icon: <FaCode className="w-8 h-8 text-blue-600 dark:text-blue-400" />,
-      title: 'Full Stack Development',
-      description: 'Building complete web applications with React, Node.js, and modern JavaScript frameworks.'
+      title: 'Software Developer',
+      description: 'Building high-quality, user-focused applications with clean code and modern JavaScript.'
     },
     {
       icon: <FaServer className="w-8 h-8 text-blue-600 dark:text-blue-400" />,
-      title: 'Backend Engineering',
-      description: 'Developing robust APIs and server-side applications with Express, MongoDB, and Python.'
+      title: 'Full Stack & Backend',
+      description: 'Designing robust APIs and scalable systems with Node.js, Express, MongoDB, and React.'
     },
     {
       icon: <FaCloud className="w-8 h-8 text-blue-600 dark:text-blue-400" />,

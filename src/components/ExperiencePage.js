@@ -2,17 +2,31 @@ import React, { useState } from 'react';
 import Section from './shared/Section';
 import Card from './shared/Card';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBriefcase, FaCalendar, FaTasks, FaTools, FaChevronDown, FaChevronUp, FaGithub } from 'react-icons/fa';
+import { FaBriefcase, FaCalendar, FaTasks, FaTools, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const experiences = [
   {
     company: 'Goozam Technologies Inc.',
+    role: 'Junior Software Developer',
+    period: 'July 2025 - Present',
+    description: 'Contributing to backend services and test-driven development to enhance delivery quality and speed.',
+    achievements: [
+      'Actively practiced test-driven development with the team, writing unit and integration tests to achieve over 89% coverage for new features.',
+      'Engineered a key backend service that optimized and accelerated client service deployment by 25%, enabling the delivery of a wide range of web platforms and AI solutions.',
+      'Developed and automated JUnit test scripts, increasing code coverage by 34% and improving the efficiency of our development pipeline for custom client applications.'
+    ],
+    technologies: ['Java', 'JavaScript', 'JUnit', 'Spring Boot', 'CI/CD'],
+    location: 'MD',
+    type: 'Full-time'
+  },
+  {
+    company: 'Goozam Technologies Inc.',
     role: 'Software Developer Intern',
-    period: 'November 2024 - Present',
+    period: 'November 2024 - June 2025',
     description: 'As a Software Developer Intern at Goozam Technologies, I collaborate with cross-functional teams to develop and maintain full-stack applications, focusing on credit scoring systems and banking modules.',
     achievements: [
       'Collaborated with management, departments and IT teams to identify end-user requirements and specifications.',
-      'Implemented Agile methodologies via careful planning; reduced software development time by 35%.',
+      'Implemented Agile methodologies via careful planning; reduced software development time by 25%.',
       'Designed flowcharts to create new software programs and worked with lead software developers and engineers in an adaptive DevOps environment. Participated in sprint planning to adhere to code development standards.',
       'Troubleshot, debugged, and maintained a full-stack credit score app, optimizing its Express backend and React frontend for cloud efficiency. Integrated ML models to predict loan likelihood and suggest personalized loan amounts.',
       'Developed and deployed core banking system modules for budget management using React. Engineered and managed CI/CD pipelines with Tekton within a DevOps framework, significantly accelerating product delivery.'
@@ -27,18 +41,11 @@ const experiences = [
     period: 'September 2024 - February 2025',
     description: 'As a Backend Engineer Intern at Entitled, I contributed to the development and optimization of an event platform, ensuring seamless user experiences and efficient data processing.',
     achievements: [
-      'Built and tested scalable RESTful APIs using Node.js, Express, and MongoDB, designing efficient CRUD operations for event management, service providers, and user accounts while integrating third-party APIs to enhance platform functionality.',
-      'Optimized MongoDB queries to improve API response times by 30-40%, reduced database load, and implemented indexing strategies, pagination, and filtering features to handle large datasets effectively.',
-      'Developed secure authentication mechanisms, including JWT-based authentication and session management, implemented password encryption and account protection measures.',
-      'Enhanced role-based access control (RBAC) to restrict user permissions and protect sensitive data.',
-      'Strengthened authentication security by implementing advanced password encryption and secure authentication protocols, reducing security vulnerabilities by 50%.',
-      'Utilized Postman for API testing and debugging, improved server-side validation to prevent inconsistencies.',
-      'Refactored API responses to provide better error messages and debugging insights, reducing critical backend errors by 40%.',
-      'Developed and integrated React components for dynamic user interactions, improved state management using Redux.',
-      'Implemented responsive UI updates for enhanced real-time interactions.',
-      'Integrated logging and monitoring tools for better debugging and system performance tracking.',
-      'Implemented rate limiting and caching strategies to optimize backend load.',
-      'Improved server efficiency by refactoring code for cleaner and more maintainable logic.'
+      'Used JavaScript to build RESTFUL API endpoints using Node.js and Express to handle CRUD operations for events, service providers, and companies, enhancing backend functionality and reducing deployment time by 20% for a management platform.',
+      'Debugged backend using Postman and improved server-side performance, reducing backend errors by 30%.',
+      'Implemented secure password update functionality, integrating frontend and backend components for service provider accounts, using CORS policies and structured API routes to safeguard data.',
+      'Managed data interaction with MongoDB, using Mongoose for schema definition and validation.',
+      'Enhanced UI interactivity by developing reusable React components, and optimizing data handling with React hooks.'
     ],
     technologies: ['JavaScript', 'Java', 'Node.js', 'Express', 'MongoDB', 'React', 'Redux', 'TypeScript'],
     location: 'Remote',

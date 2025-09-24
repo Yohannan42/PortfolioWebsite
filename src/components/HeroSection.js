@@ -43,7 +43,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-blue-300 mb-8 animate-slideUp">
-            Full Stack Developer & Cloud Engineer
+            Software Developer / Full Stack Developer
           </p>
           
           <p className="text-gray-300 max-w-2xl mx-auto mb-12 animate-fadeIn">
