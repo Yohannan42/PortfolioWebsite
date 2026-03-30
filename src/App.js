@@ -7,9 +7,11 @@ import ThemeSwitcher from './components/shared/ThemeSwitcher';
 // Lazy load components
 const Home = React.lazy(() => import('./pages/Home'));
 const AboutMeSection = React.lazy(() => import('./components/AboutMeSection'));
-const ProjectsPage = React.lazy(() => import('./components/ProjectsPage'));
-const ProjectDetailPage = React.lazy(() => import('./components/ProjectDetailPage'));
-const SkillsPage = React.lazy(() => import('./components/SkillsPage'));
+// Projects are temporarily disabled (uncomment later to re-enable).
+// const ProjectsPage = React.lazy(() => import('./components/ProjectsPage'));
+// const ProjectDetailPage = React.lazy(() => import('./components/ProjectDetailPage'));
+// Skills are temporarily disabled (uncomment later to re-enable).
+// const SkillsPage = React.lazy(() => import('./components/SkillsPage'));
 const ExperiencePage = React.lazy(() => import('./components/ExperiencePage'));
 
 // Loading component with theme support
@@ -40,27 +42,6 @@ function App() {
               <ThemeSwitcher />
               <Suspense fallback={<LoadingSpinner />}>
                 <AboutMeSection />
-              </Suspense>
-            </MainLayout>
-          } />
-          <Route path="/projects" element={
-            <MainLayout>
-              <ThemeSwitcher />
-              <Suspense fallback={<LoadingSpinner />}>
-                <ProjectsPage />
-              </Suspense>
-            </MainLayout>
-          } />
-          <Route path="/project/:projectId" element={
-            <Suspense fallback={<LoadingSpinner />}>
-              <ProjectDetailPage />
-            </Suspense>
-          } />
-          <Route path="/skills" element={
-            <MainLayout>
-              <ThemeSwitcher />
-              <Suspense fallback={<LoadingSpinner />}>
-                <SkillsPage />
               </Suspense>
             </MainLayout>
           } />

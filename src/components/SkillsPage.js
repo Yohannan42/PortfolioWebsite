@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Section from './shared/Section';
 import Card from './shared/Card';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaReact, FaNodeJs, FaAws, FaJava, FaPython, FaJs } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaAws, FaPython, FaJs } from 'react-icons/fa';
 import { useTheme } from '../context/ThemeContext';
 
 const skillCategories = [

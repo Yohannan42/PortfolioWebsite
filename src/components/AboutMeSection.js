@@ -36,7 +36,7 @@ const AboutMeSection = () => {
         <div className="text-center space-y-6">
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white">About Me</h2>
           <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            I'm a passionate software developer with a strong foundation in full-stack development and a keen interest in creating innovative solutions. My journey in tech has been driven by curiosity and a desire to build applications that make a real impact.
+            Using a technical foundation to think strategically about product, prioritize what matters, and help teams build things users actually love. Passionate about turning complex problems into simple, impactful solutions through data driven thinking and a deep understanding of user needs. With an eagerness to solve problems and interact with people, I am driven to understand user needs and create solutions that genuinely make a difference.
           </p>
         </div>
 
@@ -67,13 +67,16 @@ const AboutMeSection = () => {
               My Journey
             </h3>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              I started my programming journey with a curiosity for how things work on the web. From building simple HTML pages to developing complex full-stack applications, I've always been fascinated by the process of turning ideas into functional software.
+              I started my journey with a curiosity for how things work, not just technically, but why things are built the way they are and who they are built for. What began as a fascination with building software quickly evolved into a deeper passion for understanding the people behind the screen and the problems worth solving in the first place.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              My experience spans from creating responsive user interfaces to designing scalable backend systems. I've worked on projects ranging from task management applications to credit scoring systems with machine learning integration. Each project has taught me something new about clean code, efficient algorithms, and the importance of user experience.
+              Working across full stack applications and Agile environments gave me a unique lens. I stopped seeing products as just code and started seeing them as solutions to real human problems. The questions that excited me most were always about impact. Who does this help? Does it actually solve the right problem? How do we know it is working?
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or diving into the latest developments in software engineering. I believe in continuous learning and staying adaptable in this ever-evolving field.
+              That shift is what drew me toward product management. I believe the best products come from teams that obsess over user needs, make decisions grounded in data, and never lose sight of the problem they set out to solve. I bring a technical foundation that helps me collaborate with engineers, combined with a genuine drive to understand users and build things that make a real difference.
+            </p>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              When I am not thinking about product, you will find me engaging with product communities, attending industry events, and continuously learning what it takes to build products people truly love.
             </p>
           </div>
         </Card>

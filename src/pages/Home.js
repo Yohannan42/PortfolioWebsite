@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { FaArrowUp, FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from 'react-icons/fa';
 import HeroSection from '../components/HeroSection';
 import AboutMeSection from '../components/AboutMeSection';
-import ProjectsPage from '../components/ProjectsPage';
-import SkillsPage from '../components/SkillsPage';
+// Projects are temporarily disabled (uncomment later to re-enable).
+// import ProjectsPage from '../components/ProjectsPage';
+// Skills are temporarily disabled (uncomment later to re-enable).
+// import SkillsPage from '../components/SkillsPage';
 import ExperiencePage from '../components/ExperiencePage';
 import Section from '../components/shared/Section';
 import { useTheme } from '../context/ThemeContext';
@@ -32,8 +34,10 @@ const Home = () => {
       <div className="space-y-24">
         <AboutMeSection />
         <ExperiencePage />
-        <ProjectsPage />
-        <SkillsPage />
+        {/* Projects section temporarily disabled (uncomment ProjectsPage import + this block). */}
+        {/* <ProjectsPage /> */}
+        {/* Skills section temporarily disabled (uncomment SkillsPage import + this block). */}
+        {/* <SkillsPage /> */}
 
         <Section id="contact" className="py-16">
           <div className="text-center space-y-8">

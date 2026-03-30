@@ -43,12 +43,11 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-blue-300 mb-8 animate-slideUp">
-            Software Developer / Full Stack Developer
+            Aspiring Product Manager | M.S. in Engineering Management Candidate
           </p>
           
           <p className="text-gray-300 max-w-2xl mx-auto mb-12 animate-fadeIn">
-            Building scalable applications and solving complex problems with modern technologies.
-            Passionate about creating efficient, user-friendly solutions that make a difference.
+            {/* Content moved to About Me section */}
           </p>
 
           <div className="flex justify-center gap-6 mb-12 animate-fadeIn">
@@ -77,12 +76,13 @@ const HeroSection = () => {
           </div>
 
           <div className="flex justify-center gap-4 animate-slideUp">
-            <Link
+            {/* Projects temporarily disabled (uncomment later to re-enable). */}
+            {/* <Link
               to="/projects"
               className="px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-all transform hover:scale-105 hover:shadow-lg"
             >
               View Projects
-            </Link>
+            </Link> */}
             <Link
               to="/about"
               className="px-8 py-3 bg-transparent border-2 border-blue-600 text-white rounded-full hover:bg-blue-600/20 transition-all transform hover:scale-105 hover:shadow-lg"

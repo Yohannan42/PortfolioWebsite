@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaHome, FaUser, FaBriefcase, FaCode, FaLaptopCode, FaBars, FaTimes, FaStar } from 'react-icons/fa';
+import { FaHome, FaUser, FaBriefcase, FaBars, FaTimes } from 'react-icons/fa';
 
 const navLinks = [
   { path: '/', label: 'Home', icon: <FaHome /> },
   { path: '/about', label: 'About', icon: <FaUser /> },
   { path: '/experience', label: 'Experience', icon: <FaBriefcase /> },
-  { path: '/projects', label: 'Projects', icon: <FaCode /> },
-  { path: '/skills', label: 'Skills', icon: <FaLaptopCode /> },
+  // { path: '/projects', label: 'Projects', icon: <FaCode /> },
+  // { path: '/skills', label: 'Skills', icon: <FaLaptopCode /> },
 ];
 
 const Navbar = () => {
