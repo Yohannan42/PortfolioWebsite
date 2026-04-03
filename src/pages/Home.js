@@ -5,7 +5,7 @@ import AboutMeSection from '../components/AboutMeSection';
 // Projects are temporarily disabled (uncomment later to re-enable).
 // import ProjectsPage from '../components/ProjectsPage';
 // Skills are temporarily disabled (uncomment later to re-enable).
-// import SkillsPage from '../components/SkillsPage';
+import SkillsPage from '../components/SkillsPage';
 import ExperiencePage from '../components/ExperiencePage';
 import Section from '../components/shared/Section';
 import { useTheme } from '../context/ThemeContext';
@@ -36,8 +36,7 @@ const Home = () => {
         <ExperiencePage />
         {/* Projects section temporarily disabled (uncomment ProjectsPage import + this block). */}
         {/* <ProjectsPage /> */}
-        {/* Skills section temporarily disabled (uncomment SkillsPage import + this block). */}
-        {/* <SkillsPage /> */}
+        <SkillsPage />
 
         <Section id="contact" className="py-16">
           <div className="text-center space-y-8">

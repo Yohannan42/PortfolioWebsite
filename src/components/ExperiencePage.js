@@ -8,12 +8,12 @@ const experiences = [
   {
     company: 'Goozam Technologies Inc.',
     role: 'Junior Software Developer',
-    period: 'July 2025 - Present',
+    period: 'July 2025 - December 2025',
     description: 'Contributing to backend services and test-driven development to enhance delivery quality and speed.',
     achievements: [
-      'Actively practiced test-driven development with the team, writing unit and integration tests to achieve over 89% coverage for new features.',
-      'Engineered a key backend service that optimized and accelerated client service deployment by 25%, enabling the delivery of a wide range of web platforms and AI solutions.',
-      'Developed and automated JUnit test scripts, increasing code coverage by 34% and improving the efficiency of our development pipeline for custom client applications.'
+      'Improved a cross-border money transfer system by cleaning up the request flow and caching exchange rate data, and reduced transfer delays by about 20%.',
+      'Contributed to improving a backend service that optimized and accelerated client service deployment by 25%, supporting faster delivery of client platforms.',
+      'Developed and automated JUnit test scripts, increasing code coverage by 16% and improving the efficiency of our development pipeline for custom client applications.'
     ],
     technologies: ['Java', 'JavaScript', 'JUnit', 'Spring Boot', 'CI/CD'],
     location: 'MD',
@@ -25,11 +25,10 @@ const experiences = [
     period: 'November 2024 - June 2025',
     description: 'As a Software Developer Intern at Goozam Technologies, I collaborate with cross-functional teams to develop and maintain full-stack applications, focusing on credit scoring systems and banking modules.',
     achievements: [
-      'Collaborated with management, departments and IT teams to identify end-user requirements and specifications.',
-      'Implemented Agile methodologies via careful planning; reduced software development time by 25%.',
+      'Collaborated with management, departments, and IT teams to identify end-user requirements and specifications.',
+      'Implemented Agile methodologies via careful planning and reduced software development time by 25%.',
       'Designed flowcharts to create new software programs and worked with lead software developers and engineers in an adaptive DevOps environment. Participated in sprint planning to adhere to code development standards.',
-      'Troubleshot, debugged, and maintained a full-stack credit score app, optimizing its Express backend and React frontend for cloud efficiency. Integrated ML models to predict loan likelihood and suggest personalized loan amounts.',
-      'Developed and deployed core banking system modules for budget management using React. Engineered and managed CI/CD pipelines with Tekton within a DevOps framework, significantly accelerating product delivery.'
+      'Troubleshot, debugged, and maintained a full-stack credit score app, optimizing its Express backend and React frontend for cloud efficiency. Integrated Machine learning models to predict loan likelihood and suggest personalized loan amounts.'
     ],
     technologies: ['React', 'Express', 'Node.js', 'Machine Learning', 'Tekton', 'DevOps', 'Agile'],
     location: 'MD',
@@ -41,14 +40,13 @@ const experiences = [
     period: 'September 2024 - February 2025',
     description: 'As a Backend Engineer Intern at Entitled, I contributed to the development and optimization of an event platform, ensuring seamless user experiences and efficient data processing.',
     achievements: [
-      'Used JavaScript to build RESTFUL API endpoints using Node.js and Express to handle CRUD operations for events, service providers, and companies, enhancing backend functionality and reducing deployment time by 20% for a management platform.',
+      'Used JavaScript to build RESTFUL API endpoints using Node.js and Express to handle CRUD operations for events, service providers, and companies, enhancing backend functionality and reducing 20% deployment time for a management platform.',
       'Debugged backend using Postman and improved server-side performance, reducing backend errors by 30%.',
       'Implemented secure password update functionality, integrating frontend and backend components for service provider accounts, using CORS policies and structured API routes to safeguard data.',
-      'Managed data interaction with MongoDB, using Mongoose for schema definition and validation.',
-      'Enhanced UI interactivity by developing reusable React components, and optimizing data handling with React hooks.'
+      'Enhanced UI interactivity by developing reusable React components and optimizing data handling with React hooks.'
     ],
     technologies: ['JavaScript', 'Java', 'Node.js', 'Express', 'MongoDB', 'React', 'Redux', 'TypeScript'],
-    location: 'Remote',
+    location: 'Remote, VA',
     type: 'Internship'
   },
   {
@@ -84,29 +82,32 @@ const experiences = [
     period: '2024',
     description: 'Completed comprehensive full-stack development certification, working on multiple real-world projects and gaining hands-on experience with modern web technologies.',
     achievements: [
-      'Developed a React-based movie search application with API integration and Redux state management.',
-      'Built a full-stack MERN application for online book reviews with JWT authentication.',
-      'Implemented cloud deployments using IBM Cloud and containerization with Docker.',
-      'Created a budget management application with real-time financial tracking.',
-      'Mastered DevOps practices including Docker, Kubernetes, and CI/CD pipelines.',
-      'Developed proficiency in debugging, testing, and cloud integration.'
+      'Built a React-based movie search application, focusing on user interaction and API integration.',
+      'Developed a full-stack application for book reviews with authentication and user flow design.',
+      'Gained experience deploying applications on IBM Cloud and working with Docker.',
+      'Created a budget management tool to help users track and manage financial data effectively.',
+      'Improved problem-solving skills through debugging and testing.'
     ],
     projects: [
       {
         title: 'Movie Search Application',
-        description: 'Developed a React-based frontend with API integration to dynamically fetch and display movie data. Implemented Redux for state management and optimized API requests.'
+        description: 'Built a React-based movie search application, focusing on user interaction and API integration.'
       },
       {
-        title: 'Online Book Review System',
-        description: 'Designed a full-stack MERN application, developing a Node.js & Express backend with MongoDB, integrated secure JWT authentication, and created a responsive UI with React.'
+        title: 'Book Reviews Application',
+        description: 'Developed a full-stack application for book reviews with authentication and user flow design.'
       },
       {
-        title: 'Cloud Deployment & CI/CD Pipelines',
-        description: 'Deployed applications on IBM Cloud, containerized services using Docker, managed orchestration with Kubernetes, and automated workflows with Tekton CI/CD pipelines.'
+        title: 'IBM Cloud & Docker',
+        description: 'Gained experience deploying applications on IBM Cloud and working with Docker.'
       },
       {
-        title: 'Budget Management App',
-        description: 'Built a React-based budget application, incorporating frontend state management, dynamic UI components, and secure API communication for real-time financial tracking.'
+        title: 'Budget Management Tool',
+        description: 'Created a budget management tool to help users track and manage financial data effectively.'
+      },
+      {
+        title: 'Debugging & Testing',
+        description: 'Improved problem-solving skills through debugging and testing.'
       }
     ],
     technologies: ['JavaScript', 'React', 'Node.js', 'Express', 'MongoDB', 'Docker', 'Kubernetes'],
