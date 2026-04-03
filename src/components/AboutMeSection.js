@@ -19,9 +19,9 @@ const AboutMeSection = () => {
       description: 'Designing robust APIs and scalable systems with Node.js, Express, MongoDB, and React.'
     },
     {
-      icon: <FaCloud className="w-8 h-8 text-blue-600 dark:text-blue-400" />,
-      title: 'DevOps & Cloud',
-      description: 'Deploying applications with Docker, CI/CD pipelines, and cloud platforms like AWS.'
+      icon: <FaFileAlt className="w-8 h-8 text-blue-600 dark:text-blue-400" />,
+      title: 'Product Strategy',
+      description: 'Bridging engineering and business by working with REST APIs, agile teams, and SaaS metrics to ship products that drive measurable revenue impact.'
     },
     {
       icon: <FaLaptopCode className="w-8 h-8 text-blue-600 dark:text-blue-400" />,
